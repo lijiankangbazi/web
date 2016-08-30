@@ -1,6 +1,5 @@
 
 import routing from './app.config';
-
 import center from './center';
 import ps from './ps';
 

@@ -6,6 +6,6 @@ export default function routes($stateProvider) {
       url: '/',
       template: require('./center.html'),
       controller: 'centerCtrl',
-      controllerAs: 'center2'
+      controllerAs: 'center'
     });
 }
