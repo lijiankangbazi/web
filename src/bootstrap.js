@@ -3,7 +3,7 @@
 // load dependencies
 import './main';  
 // load the main app file
-import appModule from './app';  
+import appModule from './app.config';
 // replaces ng-app="appName"
 angular.element(document).ready(function () {  
   angular.bootstrap(document, [appModule.name], {
