@@ -2,11 +2,36 @@
 <html>
 <head>
 	<title>数据管控平台</title>
-	<meta charset="utf-8"/>
+	<meta charset="utf-8"/>	
 	<script type="text/javascript" src="bundle.js"></script>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap.min.js"></script>
+	<link rel="Stylesheet" type="text/css" href="bootstrap.css" />
 </head>
 <body>
-	<a ui-sref="center">首页</a>  <a ui-sref="ps">旅客服务</a>
+	<div class="header">
+		<nav class="navbar navbar-inverse" role="navigation">
+		    <div class="container-fluid">
+			    <div class="navbar-header">
+			        <a class="navbar-brand" href="#">DATA Governance Platform</a>
+			    </div>
+			    <div>
+			        <ul class="nav navbar-nav">
+			            <li class="active"><a ui-sref="datapresent">数据展示</a></li>
+			            <li class="dropdown">
+			                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			                    统计信息 <b class="caret"></b>
+			                </a>
+			                <ul class="dropdown-menu">
+			                    <li><a ui-sref="changelog">Change log</a></li>
+			                    <li><a href="#">others</a></li>
+			                </ul>
+			            </li>
+			        </ul>
+			    </div>
+		    </div>
+		</nav>
+	</div>
 	
 	<div>
 	    <ui-view></ui-view>
